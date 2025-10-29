@@ -1,0 +1,54 @@
+@import '@fontsource-variable/baloo-2';
+@import 'tailwindcss';
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  font-family: 'Baloo 2 Variable', system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-linear-to-br from-slate-950 via-gray-900 to-slate-900;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-linear-to-b from-purple-600 to-violet-600 rounded-full;
+  border: 0.125rem solid theme('colors.slate.900');
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-purple-500 to-violet-500;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.purple.600') theme('colors.slate.900');
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

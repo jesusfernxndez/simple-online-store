@@ -1,0 +1,10 @@
+node_modules
+dist
+build
+coverage
+*.log
+pnpm-lock.yaml
+*.config.js
+*.config.ts
+tsconfig*.json
+index.html
