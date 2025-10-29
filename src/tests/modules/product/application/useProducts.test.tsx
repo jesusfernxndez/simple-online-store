@@ -6,7 +6,7 @@ import ProductRepositoryFactory from '@/modules/product/infrastructure/ProductRe
 
 const mockProducts = [
   {
-    id: '1',
+    id: 1,
     title: 'Test Product',
     description: 'Test Description',
     price: 99.99,
