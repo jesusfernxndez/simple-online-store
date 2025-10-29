@@ -13,7 +13,7 @@ vi.mock('@/modules/cart/application/use-cart', () => ({
 }));
 
 const mockProduct = {
-  id: 1,
+  id: '1',
   title: 'Test Product',
   description: 'Test Description',
   price: 99.99,
